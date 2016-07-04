@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'DGToolApp_Example' do
+  pod 'DGToolApp', :path => '../'
+
+end

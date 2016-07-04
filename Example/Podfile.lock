@@ -1,0 +1,14 @@
+PODS:
+  - DGToolApp (0.1.0)
+
+DEPENDENCIES:
+  - DGToolApp (from `../`)
+
+EXTERNAL SOURCES:
+  DGToolApp:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DGToolApp: f93da0997797286e3b5cf24996c6f5d2f1b9552d
+
+COCOAPODS: 0.39.0

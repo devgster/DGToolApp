@@ -1,0 +1,22 @@
+{
+  "name": "DGToolApp",
+  "version": "0.1.0",
+  "summary": "A short description of DGToolApp.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/DGToolApp",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Kyungwoo Park": "devgster@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/DGToolApp.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DGToolApp/Classes/**/*"
+}

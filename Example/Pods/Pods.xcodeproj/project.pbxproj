@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		323B7E4CB3BBE914DF3890D5623BB1B7 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 455B315E411BC51D1F707853483246A0 /* ReplaceMe.m */; };
+		33BFDAA0FBC2B6A4FB9A76EC4524D678 /* DGToolApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C8A97B8E5DD03939194E9E74990E66 /* DGToolApp-dummy.m */; };
+		3B217882199A39F55827FF5C22827D3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		46CA8A70649C5B0DD52A9587EB8A9450 /* Pods-DGToolApp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 725ABDFED519C05F0A40EF9AE3FBDB8A /* Pods-DGToolApp_Example-dummy.m */; };
+		575A8CE9E0F460DD6FD0AD34D4356174 /* DGToolApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 792AA03DDA7C1DB977738490716646DE /* DGToolApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		605BAAFC1D211BA200FF2B2C /* Tool_App.h in Headers */ = {isa = PBXBuildFile; fileRef = 605BAAFA1D211BA200FF2B2C /* Tool_App.h */; };
+		605BAAFD1D211BA200FF2B2C /* Tool_App.m in Sources */ = {isa = PBXBuildFile; fileRef = 605BAAFB1D211BA200FF2B2C /* Tool_App.m */; };
+		CC4CDE5BCCF1B60F70F0BA69655A926E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		DEB27387A42A8FE6EDE7DDD8CF999C6E /* Pods-DGToolApp_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B11335DFC2E161AE19DCA773793E0D /* Pods-DGToolApp_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		552E8F8AA9AFC8990DD3477FF9C0F264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A78194C7B99CCB0AD6D2AF38D33C602;
+			remoteInfo = DGToolApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13542B5F92ABB2F6DA270F5CF4368F79 /* Pods-DGToolApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGToolApp_Example.release.xcconfig"; sourceTree = "<group>"; };
+		238AFBAEEC8D872C1FB606BC17F00E61 /* Pods-DGToolApp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGToolApp_Example-resources.sh"; sourceTree = "<group>"; };
+		24B11335DFC2E161AE19DCA773793E0D /* Pods-DGToolApp_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DGToolApp_Example-umbrella.h"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		455B315E411BC51D1F707853483246A0 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		4AF9585ADA0717ABE346309E7F9BEC08 /* Pods-DGToolApp_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DGToolApp_Example.modulemap"; sourceTree = "<group>"; };
+		5F027125B0AAC0964AF663F9A8B0FE4D /* Pods-DGToolApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGToolApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		605BAAFA1D211BA200FF2B2C /* Tool_App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool_App.h; sourceTree = "<group>"; };
+		605BAAFB1D211BA200FF2B2C /* Tool_App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool_App.m; sourceTree = "<group>"; };
+		63F4D9961BBE8C2C02FAE3896FB375CA /* DGToolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGToolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		725ABDFED519C05F0A40EF9AE3FBDB8A /* Pods-DGToolApp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DGToolApp_Example-dummy.m"; sourceTree = "<group>"; };
+		792AA03DDA7C1DB977738490716646DE /* DGToolApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGToolApp-umbrella.h"; sourceTree = "<group>"; };
+		97736BD4BFEA168E0CB22194171FF7AC /* Pods-DGToolApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGToolApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A20A20CE136EC3D3AFEFE8331D14A95A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C8A97B8E5DD03939194E9E74990E66 /* DGToolApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DGToolApp-dummy.m"; sourceTree = "<group>"; };
+		B5F7B326EDB8A35942AD350D46E915D7 /* Pods-DGToolApp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DGToolApp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C752477DC4DC6E99FDCFB43D224B5BAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB13ADA46E73EBD8E07EEB3FFDEE0A70 /* DGToolApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DGToolApp.xcconfig; sourceTree = "<group>"; };
+		E418BB0CF929690F99AE1074EC26A6B0 /* Pods_DGToolApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGToolApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A315C5AA339CF12A31BA14F846F312 /* Pods-DGToolApp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGToolApp_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F6591A0F8E8DE46CDAF6A637D813CB45 /* DGToolApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DGToolApp.modulemap; sourceTree = "<group>"; };
+		FD0FF05641F256306A797D780AFE08E7 /* DGToolApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGToolApp-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DE45C6FC844D0D659AA66B412F39903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC4CDE5BCCF1B60F70F0BA69655A926E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FD61C31840961F28973451607F3BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B217882199A39F55827FF5C22827D3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB1D4CACDF9888BCF9396989F347E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F4D9961BBE8C2C02FAE3896FB375CA /* DGToolApp.framework */,
+				E418BB0CF929690F99AE1074EC26A6B0 /* Pods_DGToolApp_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45704C68F4F1FF1253FBC91537C05B82 /* Pods-DGToolApp_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A20A20CE136EC3D3AFEFE8331D14A95A /* Info.plist */,
+				4AF9585ADA0717ABE346309E7F9BEC08 /* Pods-DGToolApp_Example.modulemap */,
+				5F027125B0AAC0964AF663F9A8B0FE4D /* Pods-DGToolApp_Example-acknowledgements.markdown */,
+				B5F7B326EDB8A35942AD350D46E915D7 /* Pods-DGToolApp_Example-acknowledgements.plist */,
+				725ABDFED519C05F0A40EF9AE3FBDB8A /* Pods-DGToolApp_Example-dummy.m */,
+				F2A315C5AA339CF12A31BA14F846F312 /* Pods-DGToolApp_Example-frameworks.sh */,
+				238AFBAEEC8D872C1FB606BC17F00E61 /* Pods-DGToolApp_Example-resources.sh */,
+				24B11335DFC2E161AE19DCA773793E0D /* Pods-DGToolApp_Example-umbrella.h */,
+				97736BD4BFEA168E0CB22194171FF7AC /* Pods-DGToolApp_Example.debug.xcconfig */,
+				13542B5F92ABB2F6DA270F5CF4368F79 /* Pods-DGToolApp_Example.release.xcconfig */,
+			);
+			name = "Pods-DGToolApp_Example";
+			path = "Target Support Files/Pods-DGToolApp_Example";
+			sourceTree = "<group>";
+		};
+		46C1EE4010DAC928D6E712AAEE945CFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				605BAAFA1D211BA200FF2B2C /* Tool_App.h */,
+				605BAAFB1D211BA200FF2B2C /* Tool_App.m */,
+				455B315E411BC51D1F707853483246A0 /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6F418752403B0B6BA1E09ADE96D859E7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D91C02F9B7E15AEEAE9AC62CC6DEF5 /* DGToolApp */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		774BAD9582589F611E58FB3D81D40EC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6591A0F8E8DE46CDAF6A637D813CB45 /* DGToolApp.modulemap */,
+				CB13ADA46E73EBD8E07EEB3FFDEE0A70 /* DGToolApp.xcconfig */,
+				A5C8A97B8E5DD03939194E9E74990E66 /* DGToolApp-dummy.m */,
+				FD0FF05641F256306A797D780AFE08E7 /* DGToolApp-prefix.pch */,
+				792AA03DDA7C1DB977738490716646DE /* DGToolApp-umbrella.h */,
+				C752477DC4DC6E99FDCFB43D224B5BAF /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DGToolApp";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				6F418752403B0B6BA1E09ADE96D859E7 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0CB1D4CACDF9888BCF9396989F347E5E /* Products */,
+				F083A0101C851155496420646B3F9721 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9D91C02F9B7E15AEEAE9AC62CC6DEF5 /* DGToolApp */ = {
+			isa = PBXGroup;
+			children = (
+				ADBCB4625D3A0D5E03C1BD9E44BCEDD8 /* DGToolApp */,
+				774BAD9582589F611E58FB3D81D40EC1 /* Support Files */,
+			);
+			name = DGToolApp;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ADBCB4625D3A0D5E03C1BD9E44BCEDD8 /* DGToolApp */ = {
+			isa = PBXGroup;
+			children = (
+				46C1EE4010DAC928D6E712AAEE945CFE /* Classes */,
+			);
+			path = DGToolApp;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F083A0101C851155496420646B3F9721 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45704C68F4F1FF1253FBC91537C05B82 /* Pods-DGToolApp_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		631A16B5468ED91B0391E749DFE7676E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB27387A42A8FE6EDE7DDD8CF999C6E /* Pods-DGToolApp_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8789C106755C37B83F02D9144F7B98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605BAAFC1D211BA200FF2B2C /* Tool_App.h in Headers */,
+				575A8CE9E0F460DD6FD0AD34D4356174 /* DGToolApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A78194C7B99CCB0AD6D2AF38D33C602 /* DGToolApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9799715B23CD0F4C713BE6664450EA38 /* Build configuration list for PBXNativeTarget "DGToolApp" */;
+			buildPhases = (
+				2CEEE8DC2B24A9E42C0E7233DA7346DC /* Sources */,
+				8DE45C6FC844D0D659AA66B412F39903 /* Frameworks */,
+				BF8789C106755C37B83F02D9144F7B98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DGToolApp;
+			productName = DGToolApp;
+			productReference = 63F4D9961BBE8C2C02FAE3896FB375CA /* DGToolApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB4719B2777D0A9A9B03E064EEEA31F3 /* Pods-DGToolApp_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C1D7E3D452AFA79C75AA9C41498B112 /* Build configuration list for PBXNativeTarget "Pods-DGToolApp_Example" */;
+			buildPhases = (
+				5E54A61C32A5231C983406966CB81D04 /* Sources */,
+				A0FD61C31840961F28973451607F3BEB /* Frameworks */,
+				631A16B5468ED91B0391E749DFE7676E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E6A4652BB537CEAE6FD09B3ECF65E02 /* PBXTargetDependency */,
+			);
+			name = "Pods-DGToolApp_Example";
+			productName = "Pods-DGToolApp_Example";
+			productReference = E418BB0CF929690F99AE1074EC26A6B0 /* Pods_DGToolApp_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0CB1D4CACDF9888BCF9396989F347E5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A78194C7B99CCB0AD6D2AF38D33C602 /* DGToolApp */,
+				BB4719B2777D0A9A9B03E064EEEA31F3 /* Pods-DGToolApp_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CEEE8DC2B24A9E42C0E7233DA7346DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605BAAFD1D211BA200FF2B2C /* Tool_App.m in Sources */,
+				33BFDAA0FBC2B6A4FB9A76EC4524D678 /* DGToolApp-dummy.m in Sources */,
+				323B7E4CB3BBE914DF3890D5623BB1B7 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E54A61C32A5231C983406966CB81D04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CA8A70649C5B0DD52A9587EB8A9450 /* Pods-DGToolApp_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E6A4652BB537CEAE6FD09B3ECF65E02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DGToolApp;
+			target = 3A78194C7B99CCB0AD6D2AF38D33C602 /* DGToolApp */;
+			targetProxy = 552E8F8AA9AFC8990DD3477FF9C0F264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24696761BB906CCAD098C14F8A4DFB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13542B5F92ABB2F6DA270F5CF4368F79 /* Pods-DGToolApp_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DGToolApp_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DGToolApp_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EEDB628BA623B0D0F827D5E0EBE5AE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB13ADA46E73EBD8E07EEB3FFDEE0A70 /* DGToolApp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DGToolApp/DGToolApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DGToolApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DGToolApp/DGToolApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DGToolApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB3E2FA51DE75ADC796BD9B6D0EDFB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97736BD4BFEA168E0CB22194171FF7AC /* Pods-DGToolApp_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DGToolApp_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DGToolApp_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6C63DB26516D728D18FC637E9915E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB13ADA46E73EBD8E07EEB3FFDEE0A70 /* DGToolApp.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DGToolApp/DGToolApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DGToolApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DGToolApp/DGToolApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DGToolApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C1D7E3D452AFA79C75AA9C41498B112 /* Build configuration list for PBXNativeTarget "Pods-DGToolApp_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3E2FA51DE75ADC796BD9B6D0EDFB20 /* Debug */,
+				24696761BB906CCAD098C14F8A4DFB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9799715B23CD0F4C713BE6664450EA38 /* Build configuration list for PBXNativeTarget "DGToolApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EEDB628BA623B0D0F827D5E0EBE5AE0 /* Debug */,
+				E6C63DB26516D728D18FC637E9915E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
