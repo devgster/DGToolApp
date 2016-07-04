@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.2.1'
+  s.version          = '0.1.0'
   s.summary          = 'This is DGToolApp.'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = 'DGToolApp by Devgster'
 
-  s.homepage         = 'https://bitbucket.org/KyungwooPark/dgtoolapp'
+  s.homepage         = 'https://github.com/devgster/DGToolApp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kyungwoo Park' => 'devgster@gmail.com' }
