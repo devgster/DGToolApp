@@ -18,7 +18,6 @@
 @end
 
 @interface NSAttributedString (Size)
-- (CGSize)size;
 - (CGSize)sizeWithConstrainedToSize:(CGSize)size;
 @end
 
@@ -33,10 +32,12 @@
 @interface UIImage (Color)
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithHexString:(NSString *)hexString;
++ (UIImage *)imageWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 @end
 
 @interface UIColor (HexColorAddition)
 + (UIColor *)hx_colorWithHexString:(NSString *)hexString;
++ (UIColor *)hx_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 @end
 
 @interface NSString (hx_StringTansformer)

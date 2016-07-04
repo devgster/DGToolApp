@@ -30,12 +30,6 @@
 
 @implementation NSAttributedString (Size)
 
-- (CGSize)size{
-    CGRect textRect = [self boundingRectWithSize:CGSizeMake(10000, 10000) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
-    
-    return CGSizeMake(ceilf(textRect.size.width), ceilf(textRect.size.height));
-}
-
 - (CGSize)sizeWithConstrainedToSize:(CGSize)size{
     CGRect textRect = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
     return CGSizeMake(ceilf(textRect.size.width), ceilf(textRect.size.height));
@@ -100,8 +94,12 @@
 }
 
 + (UIImage *)imageWithHexString:(NSString *)hexString {
+    return [self imageWithHexString:hexString alpha:1.0];
+}
+
++ (UIImage *)imageWithHexString:(NSString *)hexString alpha:(CGFloat)alpha{
     
-    UIColor *color = [UIColor hx_colorWithHexString:hexString];
+    UIColor *color = [UIColor hx_colorWithHexString:hexString alpha:alpha];
     
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
