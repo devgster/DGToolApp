@@ -1,7 +1,7 @@
 PODS:
   - Crashlytics (3.7.2):
     - Fabric (~> 1.6.3)
-  - DGToolApp (0.3.0):
+  - DGToolApp (0.3.1):
     - Crashlytics (~> 3.7)
     - GoogleAnalytics (~> 3.14)
     - UIDeviceIdentifier (~> 1.0)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
-  DGToolApp: cf70ed76c201b310fa45e0a9b334ce445ec7dd79
+  DGToolApp: f7b56aaaa8e9daf98ab3338249df9066e6098560
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   UIDeviceIdentifier: 92865347811e6ab6de414a7b751bb876080d70b7

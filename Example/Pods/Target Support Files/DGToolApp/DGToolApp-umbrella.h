@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 
 #import "Tool_App.h"
+#import "Tool_Crashlytics.h"
 #import "Tool_GAnalytics.h"
 #import "Tool_Prefix.h"
 

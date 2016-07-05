@@ -42,16 +42,17 @@ Pod::Spec.new do |s|
     s.requires_arc = false
 
 
-    s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/GoogleAnalytics/Libraries", 'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIDeviceIdentifier" -framework "UIKit"', "FRAMEWORK_SEARCH_PATHS" => '"${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"'}
-
-
-
+    s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/GoogleAnalytics/Libraries", 'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"', "FRAMEWORK_SEARCH_PATHS" => '"${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"'}
 
     s.frameworks = 'UIKit', 'CoreTelephony'
 
+#OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIDeviceIdentifier" -framework "UIKit"',
 
     s.dependency 'GoogleAnalytics', '~> 3.14'
     s.dependency 'UIDeviceIdentifier', '~> 1.0'
     s.dependency 'Crashlytics', '~> 3.7'
 
 end
+
+
+
