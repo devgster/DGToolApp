@@ -11,9 +11,6 @@
 #import <GoogleAnalytics/GAIFields.h>
 #import <GoogleAnalytics/GAIDictionaryBuilder.h>
 
-
-//static NSString *const kTrackingId = @"UA-41975720-1";
-
 @implementation Tool_GAnalytics
 
 + (void)initTrackerWithTrackingId:(NSString*)pTrackingId{
@@ -29,6 +26,7 @@
     #ifdef DEBUG
     [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
     #endif
+    
     [[[GAI sharedInstance] defaultTracker] setAllowIDFACollection:true];
     
 }

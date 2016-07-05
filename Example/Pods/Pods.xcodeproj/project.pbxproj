@@ -16,6 +16,8 @@
 		34CACB1A7A932F3789FDE6BA7CDFE641 /* Tool_GAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A47C562929D664A2F7BFCDDF7A5E90D /* Tool_GAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3872C85FB9D3D24DC148CFCEC1DDD53C /* Tool_App.h in Headers */ = {isa = PBXBuildFile; fileRef = AF997AA945DF5317908D547F9C8A902C /* Tool_App.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3F8547B39391E7DE9A642BF89E4F532A /* Tool_GAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 51165C6CBC35F8486DD5C5C11A0290A4 /* Tool_GAnalytics.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		609FEB981D2BBDFC007D12C6 /* Tool_Crashlytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 609FEB961D2BBDFC007D12C6 /* Tool_Crashlytics.h */; };
+		609FEB991D2BBDFC007D12C6 /* Tool_Crashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 609FEB971D2BBDFC007D12C6 /* Tool_Crashlytics.m */; };
 		641314F0865D6CD386C49A0F32C4985C /* Tool_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E2CA53F7E311F8259F840BB6B04A81E /* Tool_Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67E62C832E3733B66405756739F17201 /* DGToolApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 792AA03DDA7C1DB977738490716646DE /* DGToolApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CF41154F1C835F36CFE9A37FF12B9FE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1D3AA0AF4A974004509FCF4318FE01 /* CoreTelephony.framework */; };
@@ -72,6 +74,8 @@
 		5F027125B0AAC0964AF663F9A8B0FE4D /* Pods-DGToolApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGToolApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5FD9A7BD44A1DD27DE61F9CE9395ECBB /* UIDeviceIdentifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDeviceIdentifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6064D00CBBB4C7FDD74E71D61F7BA78B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		609FEB961D2BBDFC007D12C6 /* Tool_Crashlytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool_Crashlytics.h; sourceTree = "<group>"; };
+		609FEB971D2BBDFC007D12C6 /* Tool_Crashlytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool_Crashlytics.m; sourceTree = "<group>"; };
 		65D8D88ACC61A24659D547151FF48CC9 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		6F1D3AA0AF4A974004509FCF4318FE01 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		725ABDFED519C05F0A40EF9AE3FBDB8A /* Pods-DGToolApp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DGToolApp_Example-dummy.m"; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				ADDC06B1B91CDF3B09B3BB3E8C949C70 /* Tool_App.m */,
 				9A47C562929D664A2F7BFCDDF7A5E90D /* Tool_GAnalytics.h */,
 				51165C6CBC35F8486DD5C5C11A0290A4 /* Tool_GAnalytics.m */,
+				609FEB961D2BBDFC007D12C6 /* Tool_Crashlytics.h */,
+				609FEB971D2BBDFC007D12C6 /* Tool_Crashlytics.m */,
 				0E2CA53F7E311F8259F840BB6B04A81E /* Tool_Prefix.h */,
 			);
 			path = Classes;
@@ -376,6 +382,7 @@
 				3872C85FB9D3D24DC148CFCEC1DDD53C /* Tool_App.h in Headers */,
 				34CACB1A7A932F3789FDE6BA7CDFE641 /* Tool_GAnalytics.h in Headers */,
 				641314F0865D6CD386C49A0F32C4985C /* Tool_Prefix.h in Headers */,
+				609FEB981D2BBDFC007D12C6 /* Tool_Crashlytics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +506,7 @@
 				C6BBBCEAA7B051CDD8497FC5A8EB65FC /* ReplaceMe.m in Sources */,
 				18CC20B6B8735FA78745F312E9794295 /* Tool_App.m in Sources */,
 				3F8547B39391E7DE9A642BF89E4F532A /* Tool_GAnalytics.m in Sources */,
+				609FEB991D2BBDFC007D12C6 /* Tool_Crashlytics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
