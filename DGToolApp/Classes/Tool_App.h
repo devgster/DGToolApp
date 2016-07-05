@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tool_Prefix.h"
+#import "Tool_GAnalytics.h"
 
 @interface Tool_App : NSObject
 
@@ -42,4 +44,19 @@
 
 @interface NSString (hx_StringTansformer)
 - (NSString *)hx_hexStringTransformFromThreeCharacters;
+@end
+
+@interface UIDevice (Info)
++ (NSString *)platformString;
++ (NSString *)platformStringSimple;
++ (NSString *)country;
++ (NSString *)countryShort;
++ (NSString*)language;
++ (NSString*)languageShort;
++ (void)setDebugCountry:(NSString*)country;
++ (void)setDebugLanguage:(NSString*)language;
+@end
+
+@interface DGLocalizationHandler : NSObject
++ (NSString *)localizedString:(NSString *)key comment:(NSString *)comment;
 @end

@@ -21,7 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A24AD1E6DA0C67824EBA7004 /* Pods_DGToolApp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B39009E8EF69EB87457995 /* Pods_DGToolApp_Example.framework */; };
+		ACBDC336C17CC306061940C0 /* Pods_DGToolApp_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402B4DF869B4F70977DC4009 /* Pods_DGToolApp_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		402B4DF869B4F70977DC4009 /* Pods_DGToolApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGToolApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5994FE59F77F61AC1875EDC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DGToolApp_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGToolApp_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,11 +56,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		73B39009E8EF69EB87457995 /* Pods_DGToolApp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DGToolApp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		669C7E2E8E3C1748BCE718C4 /* Pods-DGToolApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGToolApp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		90E7FD65A058F80F4169F2F6 /* Pods-DGToolApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGToolApp_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A0F4F11DC291C0440058D2E8 /* Pods-DGToolApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGToolApp_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ABFE43A16052130B5D991A28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DED1C5D268AA2588E1F82A37 /* Pods-DGToolApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DGToolApp_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B079FF82C3BB185E5D83D3 /* DGToolApp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DGToolApp.podspec; path = ../DGToolApp.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +71,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A24AD1E6DA0C67824EBA7004 /* Pods_DGToolApp_Example.framework in Frameworks */,
+				ACBDC336C17CC306061940C0 /* Pods_DGToolApp_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,15 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BD9083E236E29B3E576F852 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				90E7FD65A058F80F4169F2F6 /* Pods-DGToolApp_Example.debug.xcconfig */,
-				A0F4F11DC291C0440058D2E8 /* Pods-DGToolApp_Example.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +96,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				2BD9083E236E29B3E576F852 /* Pods */,
+				7EF2F0B79C466CD271B7D1EF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +116,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				73B39009E8EF69EB87457995 /* Pods_DGToolApp_Example.framework */,
+				402B4DF869B4F70977DC4009 /* Pods_DGToolApp_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,6 +176,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		7EF2F0B79C466CD271B7D1EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DED1C5D268AA2588E1F82A37 /* Pods-DGToolApp_Example.debug.xcconfig */,
+				669C7E2E8E3C1748BCE718C4 /* Pods-DGToolApp_Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,12 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DGToolApp_Example" */;
 			buildPhases = (
-				92C1402D26E405DED9DD0D4C /* Check Pods Manifest.lock */,
+				596E3C82016A94E96AD2ADB0 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7EBD7305F18C4F9B5735CB8B /* Embed Pods Frameworks */,
-				666278F4B4F853F02881B5A1 /* Copy Pods Resources */,
+				CB5D5C76A6F7EADF772F401F /* [CP] Embed Pods Frameworks */,
+				E4C6AFD7E02079B762D49EEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,29 +282,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		666278F4B4F853F02881B5A1 /* Copy Pods Resources */ = {
+		596E3C82016A94E96AD2ADB0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7EBD7305F18C4F9B5735CB8B /* Embed Pods Frameworks */ = {
+		CB5D5C76A6F7EADF772F401F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,19 +312,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92C1402D26E405DED9DD0D4C /* Check Pods Manifest.lock */ = {
+		E4C6AFD7E02079B762D49EEA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DGToolApp_Example/Pods-DGToolApp_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,7 +453,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90E7FD65A058F80F4169F2F6 /* Pods-DGToolApp_Example.debug.xcconfig */;
+			baseConfigurationReference = DED1C5D268AA2588E1F82A37 /* Pods-DGToolApp_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -470,7 +470,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0F4F11DC291C0440058D2E8 /* Pods-DGToolApp_Example.release.xcconfig */;
+			baseConfigurationReference = 669C7E2E8E3C1748BCE718C4 /* Pods-DGToolApp_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

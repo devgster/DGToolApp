@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'This is DGToolApp.'
 
 # This description is used to generate tags and improve search results.
@@ -26,15 +26,32 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/devgster/DGToolApp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '7.0'
+    s.ios.deployment_target = '7.0'
+    s.requires_arc = true
 
-  s.source_files = 'DGToolApp/Classes/**/*'
-  
+
+    s.source_files = 'DGToolApp/Classes/**/*'
+
   # s.resource_bundles = {
   #   'DGToolApp' => ['DGToolApp/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+
+    s.requires_arc = false
+
+
+    s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/GoogleAnalytics/Libraries", 'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIDeviceIdentifier" -framework "UIKit"', "FRAMEWORK_SEARCH_PATHS" => '"${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"'}
+
+
+
+
+    s.frameworks = 'UIKit', 'CoreTelephony'
+
+
+    s.dependency 'GoogleAnalytics', '~> 3.14'
+    s.dependency 'UIDeviceIdentifier', '~> 1.0'
+    s.dependency 'Crashlytics', '~> 3.7'
+
 end

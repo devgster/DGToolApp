@@ -7,6 +7,9 @@
 //
 
 #import "Tool_App.h"
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <UIDeviceIdentifier/UIDeviceHardware.h>
 
 @implementation Tool_App
 
@@ -61,8 +64,6 @@
 + (UIFont *)sdGothicNeo_MediumSystemFontOfSize:(CGFloat)fontSize {//중간체
     return [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:fontSize];
 }
-
-
 
 //+ (UIFont *)boldSystemFontOfSize:(CGFloat)fontSize {
 //    return [UIFont fontWithName:@"NotoSans-Bold" size:fontSize];
@@ -215,3 +216,106 @@
 
 @end
 
+
+@implementation UIDevice (Info)
+
+static NSString *sDebugLenguage = nil;
+static NSString *sDbugCountry = nil;
+static NSString *shotLenguage = nil;
+
++ (NSString *) platformString{
+    return [UIDeviceHardware platformString];
+}
++ (NSString *) platformStringSimple{
+    return [UIDeviceHardware platformStringSimple];
+}
+
++ (NSString *)country{
+    if (sDbugCountry != nil) {
+        return sDbugCountry;
+    }
+    NSString *deviceCountryISO = nil;
+    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [networkInfo subscriberCellularProvider];
+    deviceCountryISO =  [[carrier isoCountryCode] uppercaseString];
+    if (deviceCountryISO == nil) {
+        deviceCountryISO = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+    }
+    return deviceCountryISO;
+}
+
++ (NSString *)countryShort{
+    NSString *deviceCountryISO = [self country];
+    if (deviceCountryISO.length > 2) {
+        deviceCountryISO = [deviceCountryISO substringToIndex:2];
+    }
+    return deviceCountryISO;
+}
+
++ (NSString*)language{
+    if (sDebugLenguage != nil) {
+        return sDebugLenguage;
+    }
+    NSString *deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
+    return deviceLanguage;
+}
+
++ (NSString*)languageShort{
+    if (shotLenguage == nil) {
+        NSString *deviceLanguage = [self language];
+        NSArray *cutLanguage = [deviceLanguage componentsSeparatedByString:@"-"];
+        if(cutLanguage.count > 1){
+            deviceLanguage = cutLanguage[0];
+        }
+        shotLenguage = deviceLanguage;
+    }
+    return shotLenguage;
+}
+
++ (void)setDebugCountry:(NSString*)country{
+    sDbugCountry = country;
+}
+
++ (void)setDebugLanguage:(NSString*)language{
+    shotLenguage = nil;
+    sDebugLenguage = language;
+}
+
+@end
+
+@implementation DGLocalizationHandler
+
++ (NSString *)localizedString:(NSString *)key comment:(NSString *)comment{
+    NSString * localizedString = [[NSBundle mainBundle] localizedStringForKey:key value:@"" table:nil];
+
+    NSString *language = [[NSLocale preferredLanguages] firstObject];
+    
+    if (sDebugLenguage != nil) {
+        localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[UIDevice language] ofType:@"lproj"]]
+                           localizedStringForKey:key
+                           value:@""
+                           table:nil];
+    }
+    
+    if ([language isEqualToString:@"en"] == false && [localizedString isEqualToString:key] == true) {
+        localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"]]
+                           localizedStringForKey:key
+                           value:@""
+                           table:nil];
+    }
+    
+    if ([localizedString isEqualToString:key]) {
+        KKLogWarn(@"## NSLocalizedString NULL Error :: KEY >> '%@'",key);
+    }
+    
+    if (localizedString == nil) {
+        localizedString = @"";
+    }
+    
+    localizedString = [localizedString stringByReplacingOccurrencesOfString:@"%s" withString:@"%@"];
+    
+    return localizedString;
+    
+}
+
+@end
