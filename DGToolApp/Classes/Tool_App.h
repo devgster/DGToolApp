@@ -35,6 +35,7 @@
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithHexString:(NSString *)hexString;
 + (UIImage *)imageWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
+- (UIColor *)averageColor;
 @end
 
 @interface UIColor (HexColorAddition)
