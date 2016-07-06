@@ -34,6 +34,7 @@
     
     KKLogDebug(@"NSLocalizedString = %@ ",NSLocalizedString(@"test",@""));
     
+
     
 }
 

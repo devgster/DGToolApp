@@ -45,23 +45,23 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 
-+ (UIFont *)sdGothicNeo_BoldSystemFontOfSize:(CGFloat)fontSize {//볼드체
++ (UIFont *)appleSDGothicNeo_BoldSystemFontOfSize:(CGFloat)fontSize {//볼드체
     return [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:fontSize];
 }
 
-+ (UIFont *)sdGothicNeo_SemiBoldSystemFontOfSize:(CGFloat)fontSize {//세미볼드체
++ (UIFont *)appleSDGothicNeo_SemiBoldSystemFontOfSize:(CGFloat)fontSize {//세미볼드체
     return [UIFont fontWithName:@"AppleSDGothicNeo-SemiBold" size:fontSize];
 }
 
-+ (UIFont *)sdGothicNeo_LightSystemFontOfSize:(CGFloat)fontSize {//옅은체
++ (UIFont *)appleSDGothicNeo_LightSystemFontOfSize:(CGFloat)fontSize {//옅은체
     return [UIFont fontWithName:@"AppleSDGothicNeo-Light" size:fontSize];
 }
 
-+ (UIFont *)sdGothicNeo_RegularSystemFontOfSize:(CGFloat)fontSize {//일반체
++ (UIFont *)appleSDGothicNeo_RegularSystemFontOfSize:(CGFloat)fontSize {//일반체
     return [UIFont fontWithName:@"AppleSDGothicNeo-Regular" size:fontSize];
 }
 
-+ (UIFont *)sdGothicNeo_MediumSystemFontOfSize:(CGFloat)fontSize {//중간체
++ (UIFont *)appleSDGothicNeo_MediumSystemFontOfSize:(CGFloat)fontSize {//중간체
     return [UIFont fontWithName:@"AppleSDGothicNeo-Medium" size:fontSize];
 }
 

@@ -24,18 +24,18 @@
 @end
 
 @interface UIFont (Custom)
-+ (UIFont *)sdGothicNeo_BoldSystemFontOfSize:(CGFloat)fontSize;
-+ (UIFont *)sdGothicNeo_SemiBoldSystemFontOfSize:(CGFloat)fontSize;
-+ (UIFont *)sdGothicNeo_LightSystemFontOfSize:(CGFloat)fontSize;
-+ (UIFont *)sdGothicNeo_RegularSystemFontOfSize:(CGFloat)fontSize;
-+ (UIFont *)sdGothicNeo_MediumSystemFontOfSize:(CGFloat)fontSize;
++ (UIFont *)appleSDGothicNeo_BoldSystemFontOfSize:(CGFloat)fontSize;
++ (UIFont *)appleSDGothicNeo_SemiBoldSystemFontOfSize:(CGFloat)fontSize;
++ (UIFont *)appleSDGothicNeo_LightSystemFontOfSize:(CGFloat)fontSize;
++ (UIFont *)appleSDGothicNeo_RegularSystemFontOfSize:(CGFloat)fontSize;
++ (UIFont *)appleSDGothicNeo_MediumSystemFontOfSize:(CGFloat)fontSize;
 @end
 
 @interface UIImage (Color)
 + (UIImage *)imageWithColor:(UIColor *)color;
 + (UIImage *)imageWithHexString:(NSString *)hexString;
 + (UIImage *)imageWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
-- (UIColor *)averageColor;
+- (UIColor *)averageColor;//이미지의 평균 색상
 @end
 
 @interface UIColor (HexColorAddition)
