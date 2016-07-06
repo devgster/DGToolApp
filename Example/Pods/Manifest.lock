@@ -1,6 +1,12 @@
 PODS:
-  - DGToolApp (0.3.3):
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - DGToolApp (0.3.5):
+    - Crashlytics (~> 3.7)
+    - GoogleAnalytics (~> 3.14)
     - UIDeviceIdentifier (~> 1.0)
+  - Fabric (1.6.7)
+  - GoogleAnalytics (3.14.0)
   - UIDeviceIdentifier (1.0.2)
 
 DEPENDENCIES:
@@ -11,7 +17,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DGToolApp: 00efdd04d710a944a17aa4c807bcfb8384154dc5
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  DGToolApp: 669bf69c914c3a759c672998282fcb31f44b5b29
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
   UIDeviceIdentifier: 92865347811e6ab6de414a7b751bb876080d70b7
 
 PODFILE CHECKSUM: 55ba09bba12f3a4c4750583b0c2320ea7db3dedc

@@ -304,7 +304,7 @@ static NSString *shotLenguage = nil;
                            table:nil];
     }
     
-    if ([localizedString isEqualToString:key]) {
+    if ([localizedString isEqualToString:key] || localizedString == nil) {
         KKLogWarn(@"## NSLocalizedString NULL Error :: KEY >> '%@'",key);
     }
     

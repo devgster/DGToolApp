@@ -7,33 +7,33 @@
 //
 
 #import "Tool_Crashlytics.h"
-//#import <Fabric/Fabric.h>
-//#import <Crashlytics/Crashlytics.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation Tool_Crashlytics
 
 + (void)initCrashlytics{
-//    [Fabric with:@[[Crashlytics class]]];
+    [Fabric with:@[[Crashlytics class]]];
 }
 
 + (void)crash{
-//    [CrashlyticsKit crash];
+    [CrashlyticsKit crash];
 }
 
 + (void)throwException{
-//    [CrashlyticsKit throwException];
+    [CrashlyticsKit throwException];
 }
 
 + (void)userIdentifiers:(NSString*)userIdentifiers email:(NSString*)email name:(NSString*)name{
-//    if (userIdentifiers) {
-//        [CrashlyticsKit setUserIdentifier:userIdentifiers];
-//    }
-//    if (email) {
-//        [CrashlyticsKit setUserEmail:email];
-//    }
-//    if (name) {
-//        [CrashlyticsKit setUserName:name];
-//    }
+    if (userIdentifiers) {
+        [CrashlyticsKit setUserIdentifier:userIdentifiers];
+    }
+    if (email) {
+        [CrashlyticsKit setUserEmail:email];
+    }
+    if (name) {
+        [CrashlyticsKit setUserName:name];
+    }
 }
 
 @end
