@@ -1,6 +1,0 @@
-framework module DGToolApp {
-  umbrella header "DGToolApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

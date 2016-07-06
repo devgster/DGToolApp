@@ -1,8 +1,8 @@
 CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/DGToolApp
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS" "$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/GoogleAnalytics"
-LIBRARY_SEARCH_PATHS = $(inherited) ${PODS_ROOT}/GoogleAnalytics/Libraries
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/DGToolApp" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/DGToolApp" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/GoogleAnalytics" "${PODS_ROOT}/Headers/Public/UIDeviceIdentifier"
+LIBRARY_SEARCH_PATHS = $(inherited) ${PODS_ROOT}/GoogleAnalytics/Libraries "$PODS_CONFIGURATION_BUILD_DIR/UIDeviceIdentifier"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "CoreTelephony" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

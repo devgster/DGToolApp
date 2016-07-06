@@ -82,12 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DGToolApp/DGToolApp.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIDeviceIdentifier/UIDeviceIdentifier.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DGToolApp/DGToolApp.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/UIDeviceIdentifier/UIDeviceIdentifier.framework"
-fi

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.3.1'
+  s.version          = '0.3.2'
   s.summary          = 'This is DGToolApp.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
-    s.requires_arc = true
+    s.requires_arc = false
 
 
     s.source_files = 'DGToolApp/Classes/**/*'
@@ -37,9 +37,6 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-
-
-    s.requires_arc = false
 
 
     s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/GoogleAnalytics/Libraries", 'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"', "FRAMEWORK_SEARCH_PATHS" => '"${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"'}
@@ -54,5 +51,6 @@ Pod::Spec.new do |s|
 
 end
 
-
+#pod lib lint --use-libraries --no-clean --verbose
+#pod trunk push DGToolApp.podspec  --verbose --use-libraries
 

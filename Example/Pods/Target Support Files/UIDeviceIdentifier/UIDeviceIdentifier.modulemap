@@ -1,6 +1,0 @@
-framework module UIDeviceIdentifier {
-  umbrella header "UIDeviceIdentifier-umbrella.h"
-
-  export *
-  module * { export * }
-}
