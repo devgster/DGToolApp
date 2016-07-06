@@ -10,16 +10,16 @@
 		1051CC7E038C73266F665DE3C6A527D7 /* Tool_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE631B01618397E000B4BF1289EA6CA /* Tool_Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		295603EC23E7DB6F212A8D3F898F9A44 /* Pods-DGToolApp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0CB30D5AE410C778E5E84AE7A03718 /* Pods-DGToolApp_Example-dummy.m */; };
 		4C97C6BB0D920C9C1E0F63364083BA2B /* Tool_App.h in Headers */ = {isa = PBXBuildFile; fileRef = 1498D2D18BDC070FFC09F5CA6E9F4AB0 /* Tool_App.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63A8E019EC0C5CC0546B757BF77BB097 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 005B4525C2B704E88384E2D272DE401B /* UIDeviceHardware.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		63A8E019EC0C5CC0546B757BF77BB097 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ADD33C175106EB1A5E550977AFF7D9 /* UIDeviceHardware.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		762332D4795E59F34DED58C6CBB6320D /* Tool_App.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E76D5D76406A44C5ACECA7AAEA8F7 /* Tool_App.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		81DF22D30BB7B94FE6B07EBAF2AD25E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B666AC17A8F6A5831EC4C601D25405ED /* UIKit.framework */; };
-		87D91403FC86410EC80E7B0ED96FA0B5 /* UIDeviceHardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B1C1A0C236501EE8BEDA771B8AF724C /* UIDeviceHardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D91403FC86410EC80E7B0ED96FA0B5 /* UIDeviceHardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 808569560DEDE93437C929F9EC107AE2 /* UIDeviceHardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8ABA49DC3793EF0ABA0536D49C523C5C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F1CB3EAB7ADC841961E07B7EB468BC /* CoreTelephony.framework */; };
 		A902EB22BEF7BF02830D2F499F9215CA /* Tool_Crashlytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D60CEF9E8C16831AE0BF3CE05D27CB60 /* Tool_Crashlytics.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		AFB5BB2FA25A01207046614DC2F18CBD /* Tool_Crashlytics.h in Headers */ = {isa = PBXBuildFile; fileRef = E92740AE0B2920DD319E497391689824 /* Tool_Crashlytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B16CB577E769FF2930E2423D2C28EC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BA4079639B5BB511CDC98D262C5E1B /* Foundation.framework */; };
 		B1800B7CD077159DB7AB34BD36C32D58 /* Tool_GAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BF4C3DAA3C73A2B820F7E88C7D32E4 /* Tool_GAnalytics.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B690EB89FD3C13F425A6C0C886CB995B /* UIDeviceIdentifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A61768AEE3F749BF50A31E0282166A5F /* UIDeviceIdentifier-dummy.m */; };
+		B690EB89FD3C13F425A6C0C886CB995B /* UIDeviceIdentifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B63FEA6CEE2FB0DF0B0783817ED3FF /* UIDeviceIdentifier-dummy.m */; };
 		C71A8A10507E8F636A1354987E26A813 /* DGToolApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5133D3AC777266F4EA30C35F48B15DD /* DGToolApp-dummy.m */; };
 		DADC0DC39D38B476E1DF3FC58F3F0F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BA4079639B5BB511CDC98D262C5E1B /* Foundation.framework */; };
 		E0467DC2AAB2F9A84F7A8B33C1942982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82BA4079639B5BB511CDC98D262C5E1B /* Foundation.framework */; };
@@ -52,56 +52,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005B4525C2B704E88384E2D272DE401B /* UIDeviceHardware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = UIDeviceIdentifier/UIDeviceHardware.m; sourceTree = "<group>"; };
 		0D3E76D5D76406A44C5ACECA7AAEA8F7 /* Tool_App.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Tool_App.m; sourceTree = "<group>"; };
 		1498D2D18BDC070FFC09F5CA6E9F4AB0 /* Tool_App.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Tool_App.h; sourceTree = "<group>"; };
-		180D70574BEFE431580EDE7449CF51CE /* libGoogleAnalytics.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = Libraries/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		1FFA075080385DC2ECDDB3AAFA15C013 /* UIDeviceIdentifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceIdentifier-prefix.pch"; sourceTree = "<group>"; };
 		268382FA4493BF1D45537B3087D30C6D /* Pods-DGToolApp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGToolApp_Example-resources.sh"; sourceTree = "<group>"; };
 		2A5176BCA72C1F31E5E863A70CF326D3 /* Pods-DGToolApp_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGToolApp_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2B1C1A0C236501EE8BEDA771B8AF724C /* UIDeviceHardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = UIDeviceIdentifier/UIDeviceHardware.h; sourceTree = "<group>"; };
 		2F936EB6DFB8A44A37F6B60A66800634 /* Pods-DGToolApp_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGToolApp_Example-frameworks.sh"; sourceTree = "<group>"; };
-		301934C300EED7A375BA248B885B631C /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
-		389D5AFD50F56274C264701D273CD39E /* GAITracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = Headers/Public/GAITracker.h; sourceTree = "<group>"; };
 		46614060BDE2376C779CC8342AA059DB /* libDGToolApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDGToolApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8D4F6EF3447C89AB3B227617F3D84B /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		54B95E578BBF9A5BF3CB9690621D8FA6 /* Pods-DGToolApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGToolApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		550CB56749BB68B37C7D9F72F27FC3AC /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
-		56DAB7A4BD1D8898B884F6932EA1C8AE /* UIDeviceIdentifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceIdentifier.xcconfig; sourceTree = "<group>"; };
-		65D8D88ACC61A24659D547151FF48CC9 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		6FE0A60C3495D2263C9672808A4562E3 /* DGToolApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGToolApp-prefix.pch"; sourceTree = "<group>"; };
-		73978647371A3E741F3FDE8BB19EB743 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		74FE8FDCE9371BCE5EB81C3FEBDC9AA7 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = Headers/Public/GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		7C2B04FA45A48C94EF714CA042A0300B /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = Headers/Public/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		7EA40780F7ECCCB95792F852A5053574 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
-		7F2FA83C32AAF433E46468F45B0999E9 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		808569560DEDE93437C929F9EC107AE2 /* UIDeviceHardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = UIDeviceIdentifier/UIDeviceHardware.h; sourceTree = "<group>"; };
+		81ADD33C175106EB1A5E550977AFF7D9 /* UIDeviceHardware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = UIDeviceIdentifier/UIDeviceHardware.m; sourceTree = "<group>"; };
 		82BA4079639B5BB511CDC98D262C5E1B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		885CC62C40FE152A321FFBC47031B4E8 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		8AE631B01618397E000B4BF1289EA6CA /* Tool_Prefix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Tool_Prefix.h; sourceTree = "<group>"; };
 		8F45546CDAA24BFEC894C9F185172C21 /* Pods-DGToolApp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DGToolApp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		92D1DFC18CA250589A02FA71BBA186DF /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		9339F70155F77F9C7025CC90357EDCBF /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = Headers/Public/GAIEcommercePromotion.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9551B53A0CBB651A4DAE13598F4CF2B6 /* Pods-DGToolApp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGToolApp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A230BAE9F61FFDC709C82CEB60F6C7F9 /* DGToolApp.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DGToolApp.xcconfig; sourceTree = "<group>"; };
-		A61768AEE3F749BF50A31E0282166A5F /* UIDeviceIdentifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceIdentifier-dummy.m"; sourceTree = "<group>"; };
 		B5133D3AC777266F4EA30C35F48B15DD /* DGToolApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DGToolApp-dummy.m"; sourceTree = "<group>"; };
 		B666AC17A8F6A5831EC4C601D25405ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B823141B2DAFEF0006AAA46B9014E09F /* Tool_GAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Tool_GAnalytics.h; sourceTree = "<group>"; };
-		C8625F77AF75480C5F944F1C50D6FCAF /* GAILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = Headers/Public/GAILogger.h; sourceTree = "<group>"; };
+		C76595626FE8392032FECAEC09144DC4 /* UIDeviceIdentifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceIdentifier.xcconfig; sourceTree = "<group>"; };
 		C9F1CB3EAB7ADC841961E07B7EB468BC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
-		CB2E3B506377B75D2F23BD73D14C9266 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
-		CDF5FCB55A8E85EBF504B185997FA14D /* UIDeviceIdentifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceIdentifier-prefix.pch"; sourceTree = "<group>"; };
-		D4BAD8743CC82891C68CDDB938A2905C /* GAITrackedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = Headers/Public/GAITrackedViewController.h; sourceTree = "<group>"; };
 		D60CEF9E8C16831AE0BF3CE05D27CB60 /* Tool_Crashlytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Tool_Crashlytics.m; sourceTree = "<group>"; };
 		D8DD9603FC239020A9D1E8AF8A7B57D8 /* libUIDeviceIdentifier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIDeviceIdentifier.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC5189499F6FBC72EB88757A5127C3A /* libPods-DGToolApp_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DGToolApp_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92740AE0B2920DD319E497391689824 /* Tool_Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Tool_Crashlytics.h; sourceTree = "<group>"; };
-		EE97B4C6A065D62245CF9269A09EA3A6 /* GAI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = Headers/Public/GAI.h; sourceTree = "<group>"; };
 		F2BF4C3DAA3C73A2B820F7E88C7D32E4 /* Tool_GAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Tool_GAnalytics.m; sourceTree = "<group>"; };
-		F5320B4F5ABEAF5CF485487F7B0654BA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		F823F8CE4AC6305CC4A4D06DD27C40AB /* GAIFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = Headers/Public/GAIFields.h; sourceTree = "<group>"; };
+		F7B63FEA6CEE2FB0DF0B0783817ED3FF /* UIDeviceIdentifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceIdentifier-dummy.m"; sourceTree = "<group>"; };
 		FA0CB30D5AE410C778E5E84AE7A03718 /* Pods-DGToolApp_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DGToolApp_Example-dummy.m"; sourceTree = "<group>"; };
-		FF9F45588FAF900F374C13C28DA70834 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,28 +132,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		224B36AAC7EA8771D8D0A538DF4EED78 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6678217C57C58E3311185D9D6EE5003C /* Crashlytics */,
-				8DFC01E82675AEF3873386CEEB702E82 /* Fabric */,
-				EF08B4FD225876535E6C427E853C264D /* GoogleAnalytics */,
-				ACFA68845D3357804CBF14006709CF1C /* UIDeviceIdentifier */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		25BDDD25238359757D02B73463EE1ACA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				56DAB7A4BD1D8898B884F6932EA1C8AE /* UIDeviceIdentifier.xcconfig */,
-				A61768AEE3F749BF50A31E0282166A5F /* UIDeviceIdentifier-dummy.m */,
-				CDF5FCB55A8E85EBF504B185997FA14D /* UIDeviceIdentifier-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIDeviceIdentifier";
-			sourceTree = "<group>";
-		};
 		356893A26B2B4841F05EC6C55D31B808 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,27 +172,15 @@
 			path = "Target Support Files/Pods-DGToolApp_Example";
 			sourceTree = "<group>";
 		};
-		554F12BE17C892E2E2B5EDD26F14A4DB /* Frameworks */ = {
+		5BC25108A132F75FDD2A4BA6BFB41B64 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5320B4F5ABEAF5CF485487F7B0654BA /* Crashlytics.framework */,
+				C76595626FE8392032FECAEC09144DC4 /* UIDeviceIdentifier.xcconfig */,
+				F7B63FEA6CEE2FB0DF0B0783817ED3FF /* UIDeviceIdentifier-dummy.m */,
+				1FFA075080385DC2ECDDB3AAFA15C013 /* UIDeviceIdentifier-prefix.pch */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6678217C57C58E3311185D9D6EE5003C /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				65D8D88ACC61A24659D547151FF48CC9 /* ANSCompatibility.h */,
-				7EA40780F7ECCCB95792F852A5053574 /* Answers.h */,
-				301934C300EED7A375BA248B885B631C /* CLSAttributes.h */,
-				FF9F45588FAF900F374C13C28DA70834 /* CLSLogging.h */,
-				885CC62C40FE152A321FFBC47031B4E8 /* CLSReport.h */,
-				92D1DFC18CA250589A02FA71BBA186DF /* CLSStackFrame.h */,
-				CB2E3B506377B75D2F23BD73D14C9266 /* Crashlytics.h */,
-				554F12BE17C892E2E2B5EDD26F14A4DB /* Frameworks */,
-			);
-			path = Crashlytics;
+			name = "Support Files";
+			path = "../Target Support Files/UIDeviceIdentifier";
 			sourceTree = "<group>";
 		};
 		6F418752403B0B6BA1E09ADE96D859E7 /* Development Pods */ = {
@@ -251,7 +197,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				6F418752403B0B6BA1E09ADE96D859E7 /* Development Pods */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				224B36AAC7EA8771D8D0A538DF4EED78 /* Pods */,
+				855AED6A19E89EB91264A65EA9589A16 /* Pods */,
 				43A4245E9ED703361217F9DEBB72025F /* Products */,
 				B9333945491788C0213BD24E2F739DD3 /* Targets Support Files */,
 			);
@@ -267,38 +213,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		8683600C7E0C574C6F6BA0A6384F8C4A /* Frameworks */ = {
+		855AED6A19E89EB91264A65EA9589A16 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				180D70574BEFE431580EDE7449CF51CE /* libGoogleAnalytics.a */,
+				9B33A3E19389F40E0C3EB713092F3077 /* UIDeviceIdentifier */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		8DFC01E82675AEF3873386CEEB702E82 /* Fabric */ = {
+		9B33A3E19389F40E0C3EB713092F3077 /* UIDeviceIdentifier */ = {
 			isa = PBXGroup;
 			children = (
-				AFB437B42919F7BC28014356B620A27C /* Frameworks */,
-			);
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		ACFA68845D3357804CBF14006709CF1C /* UIDeviceIdentifier */ = {
-			isa = PBXGroup;
-			children = (
-				2B1C1A0C236501EE8BEDA771B8AF724C /* UIDeviceHardware.h */,
-				005B4525C2B704E88384E2D272DE401B /* UIDeviceHardware.m */,
-				25BDDD25238359757D02B73463EE1ACA /* Support Files */,
+				808569560DEDE93437C929F9EC107AE2 /* UIDeviceHardware.h */,
+				81ADD33C175106EB1A5E550977AFF7D9 /* UIDeviceHardware.m */,
+				5BC25108A132F75FDD2A4BA6BFB41B64 /* Support Files */,
 			);
 			path = UIDeviceIdentifier;
-			sourceTree = "<group>";
-		};
-		AFB437B42919F7BC28014356B620A27C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7F2FA83C32AAF433E46468F45B0999E9 /* Fabric.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B9333945491788C0213BD24E2F739DD3 /* Targets Support Files */ = {
@@ -326,24 +256,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DGToolApp";
-			sourceTree = "<group>";
-		};
-		EF08B4FD225876535E6C427E853C264D /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				EE97B4C6A065D62245CF9269A09EA3A6 /* GAI.h */,
-				7C2B04FA45A48C94EF714CA042A0300B /* GAIDictionaryBuilder.h */,
-				550CB56749BB68B37C7D9F72F27FC3AC /* GAIEcommerceFields.h */,
-				74FE8FDCE9371BCE5EB81C3FEBDC9AA7 /* GAIEcommerceProduct.h */,
-				73978647371A3E741F3FDE8BB19EB743 /* GAIEcommerceProductAction.h */,
-				9339F70155F77F9C7025CC90357EDCBF /* GAIEcommercePromotion.h */,
-				F823F8CE4AC6305CC4A4D06DD27C40AB /* GAIFields.h */,
-				C8625F77AF75480C5F944F1C50D6FCAF /* GAILogger.h */,
-				D4BAD8743CC82891C68CDDB938A2905C /* GAITrackedViewController.h */,
-				389D5AFD50F56274C264701D273CD39E /* GAITracker.h */,
-				8683600C7E0C574C6F6BA0A6384F8C4A /* Frameworks */,
-			);
-			path = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,7 +441,7 @@
 		};
 		3E30BFF86119A5C69969C1721DB8FB37 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DAB7A4BD1D8898B884F6932EA1C8AE /* UIDeviceIdentifier.xcconfig */;
+			baseConfigurationReference = C76595626FE8392032FECAEC09144DC4 /* UIDeviceIdentifier.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -655,7 +567,7 @@
 		};
 		8BB64DC2E2E18374A5A6EA254C75D5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DAB7A4BD1D8898B884F6932EA1C8AE /* UIDeviceIdentifier.xcconfig */;
+			baseConfigurationReference = C76595626FE8392032FECAEC09144DC4 /* UIDeviceIdentifier.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
