@@ -304,12 +304,12 @@ static NSString *shotLenguage = nil;
                            table:nil];
     }
     
-    if ([localizedString isEqualToString:key] || localizedString == nil) {
-        KKLogWarn(@"## NSLocalizedString NULL Error :: KEY >> '%@'",key);
+    if (localizedString == nil) {
+        localizedString = key;
     }
     
-    if (localizedString == nil) {
-        localizedString = @"";
+    if ([localizedString isEqualToString:key]) {
+        KKLogWarn(@"## NSLocalizedString NULL Error :: KEY >> '%@'",key);
     }
     
     localizedString = [localizedString stringByReplacingOccurrencesOfString:@"%s" withString:@"%@"];
