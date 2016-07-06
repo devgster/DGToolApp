@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'This is DGToolApp.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
-    s.requires_arc = false
+#    s.requires_arc = false
 
 
     s.source_files = 'DGToolApp/Classes/**/*'

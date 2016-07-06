@@ -18,7 +18,6 @@
   "platforms": {
     "ios": "7.0"
   },
-  "requires_arc": false,
   "source_files": "DGToolApp/Classes/**/*",
   "frameworks": [
     "UIKit",
