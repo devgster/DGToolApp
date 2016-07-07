@@ -10,8 +10,61 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <UIDeviceIdentifier/UIDeviceHardware.h>
+#import <StoreKit/StoreKit.h>
 
 @implementation Tool_App
+
+#pragma mark - rootViewController;
++ (UIViewController *)rootViewController{
+    return [self rootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+}
+
++ (UIViewController *)rootViewController:(UIViewController *)rootViewController
+{
+    if (rootViewController.presentedViewController == nil) {
+        return rootViewController;
+    }
+    
+    if ([rootViewController.presentedViewController isMemberOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = (UINavigationController *)rootViewController.presentedViewController;
+        UIViewController *lastViewController = [[navigationController viewControllers] lastObject];
+        return [self topViewController:lastViewController];
+    }
+    
+    UIViewController *presentedViewController = (UIViewController *)rootViewController.presentedViewController;
+    return [self topViewController:presentedViewController];
+}
+
+#pragma mark - hideKeyboard
+
++ (void)hideKeyboard
+{
+    UIWindow *tempWindow;
+    
+    for (int c = 0; c < [[[UIApplication sharedApplication] windows] count]; c++)
+    {
+        tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:c];
+        for (int i = 0; i < [tempWindow.subviews count]; i++)
+        {
+            [self hideKeyboardRecursion:[tempWindow.subviews objectAtIndex:i]];
+        }
+    }
+}
+
++ (void)hideKeyboardRecursion:(UIView*)view
+{
+    if ([view conformsToProtocol:@protocol(UITextInputTraits)])
+    {
+        [view resignFirstResponder];
+    }
+    if ([view.subviews count]>0)
+    {
+        for (int i = 0; i < [view.subviews count]; i++)
+        {
+            [self _hideKeyboardRecursion:[view.subviews objectAtIndex:i]];
+        }
+    }
+}
 
 @end
 
@@ -34,7 +87,9 @@
 @implementation NSAttributedString (Size)
 
 - (CGSize)sizeWithConstrainedToSize:(CGSize)size{
-    CGRect textRect = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    CGRect textRect = [self boundingRectWithSize:size
+                                         options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading
+                                         context:nil];
     return CGSizeMake(ceilf(textRect.size.width), ceilf(textRect.size.height));
 }
 
@@ -241,7 +296,21 @@
 @end
 
 
-@implementation UIDevice (Info)
+@implementation UITextField (ColorPlaceholder)
+
+- (void)setPlaceholder:(NSString*)placeholder color:(UIColor*)color{
+    [self setPlaceholder:placeholder color:color font:self.font];
+}
+
+- (void)setPlaceholder:(NSString*)placeholder color:(UIColor*)color font:(UIFont*)font{
+    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:placeholder
+                                                                 attributes:@{ NSForegroundColorAttributeName : color ,
+                                                                               NSFontAttributeName : font}];
+}
+
+@end
+
+@implementation UIDevice (DeviceInfo)
 
 static NSString *sDebugLenguage = nil;
 static NSString *sDbugCountry = nil;
@@ -343,3 +412,63 @@ static NSString *shotLenguage = nil;
 }
 
 @end
+
+
+@implementation ModalAppStore
+
+static ModalAppStore *sModalAppStore = nil;
+
++ (void)linkToAppstoreWithUrlString:(NSString*)urlString appId:(NSString*)appId{
+    [self linkToAppstoreWithViewController:nil urlString:urlString appId:appId];
+}
+
++ (void)linkToAppstoreWithViewController:(UIViewController*)viewController urlString:(NSString*)urlString appId:(NSString*)appId{
+    if (sModalAppStore == nil) {
+        sModalAppStore = [[ModalAppStore alloc] init];
+    }
+    [sModalAppStore linkToAppstoreWithViewController:viewController urlString:urlString appId:appId];
+}
+
+- (void)linkToAppstoreWithViewController:(UIViewController*)viewController urlString:(NSString*)urlString appId:(NSString*)appId{
+    
+    if(NSClassFromString(@"SKStoreProductViewController")) {
+        
+        SKStoreProductViewController *storeController = [[SKStoreProductViewController alloc] init];
+        storeController.delegate = self;
+        
+        NSDictionary *productParameters = @{ SKStoreProductParameterITunesItemIdentifier : appId };
+        
+        [storeController loadProductWithParameters:productParameters completionBlock:^(BOOL result, NSError *error) {
+            if (result) {
+                if (viewController) {
+                    [viewController presentViewController:storeController animated:YES completion:nil];
+                }else{
+                    [[Tool_App rootViewController] presentViewController:storeController animated:YES completion:nil];
+                }
+                
+            } else {
+                [[[UIAlertView alloc] initWithTitle:@"오류발생"
+                                            message:@"앱스토어 링크를 여는데 오류가 발생하였습니다."
+                                           delegate:nil
+                                  cancelButtonTitle:@"Ok"
+                                  otherButtonTitles: nil] show];
+            }
+        }];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    }
+}
+
+#pragma mark SKStoreProductViewControllerDelegate
+
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController
+{
+    [viewController dismissViewControllerAnimated:YES completion:^{
+        if (sModalAppStore) {
+            sModalAppStore = nil;
+        }
+    }];
+}
+
+@end
+

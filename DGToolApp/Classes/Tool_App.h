@@ -11,7 +11,8 @@
 #import "Tool_GAnalytics.h"
 
 @interface Tool_App : NSObject
-
++ (UIViewController *)rootViewController;
++ (void)hideKeyboard;
 @end
 
 @interface NSString (Size)
@@ -47,7 +48,12 @@
 - (NSString *)hx_hexStringTransformFromThreeCharacters;
 @end
 
-@interface UIDevice (Info)
+@interface UITextField (ColorPlaceholder)
+- (void)setPlaceholder:(NSString*)placeholder color:(UIColor*)color;
+- (void)setPlaceholder:(NSString*)placeholder color:(UIColor*)color font:(UIFont*)font;
+@end
+
+@interface UIDevice (DeviceInfo)
 + (NSString *)platformString;
 + (NSString *)platformStringSimple;
 + (NSString *)country;
@@ -60,4 +66,9 @@
 
 @interface DGLocalizationHandler : NSObject
 + (NSString *)localizedString:(NSString *)key comment:(NSString *)comment;
+@end
+
+@interface ModalAppStore : NSObject
++ (void)linkToAppstoreWithUrlString:(NSString*)urlString appId:(NSString*)appId;
++ (void)linkToAppstoreWithViewController:(UIViewController*)viewController urlString:(NSString*)urlString appId:(NSString*)appId;
 @end

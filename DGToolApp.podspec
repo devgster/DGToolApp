@@ -41,7 +41,7 @@ Pod::Spec.new do |s|
 
     s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => "${PODS_ROOT}/GoogleAnalytics/Libraries", 'OTHER_LDFLAGS' => '$(inherited) -ObjC -l"GoogleAnalytics" -l"c++" -l"sqlite3" -l"z" -framework "CoreData" -framework "Crashlytics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" "-all_load"', "FRAMEWORK_SEARCH_PATHS" => '"${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Crashlytics/iOS"'}
 
-    s.frameworks = 'UIKit', 'CoreTelephony'
+    s.frameworks = 'UIKit', 'CoreTelephony', 'StoreKit'
 
     s.dependency 'GoogleAnalytics', '~> 3.14'
     s.dependency 'UIDeviceIdentifier', '~> 1.0'
