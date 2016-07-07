@@ -95,6 +95,44 @@
 
 @end
 
+@implementation NSAttributedString (HTML)
+
+- (NSAttributedString *)attributedStringFromHTMLString:(NSString *)htmlString{
+    NSMutableAttributedString* htmlAttributedString = [[NSMutableAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUTF8StringEncoding]
+                                                                                 options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                                                                                           NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
+                                                                      documentAttributes:nil error:nil];
+    return htmlAttributedString;
+}
+
+- (NSAttributedString *)attributedStringFromHTMLString:(NSString *)htmlString textColor:(UIColor*)textColor textFont:(UIFont*)textFont TextAlignment:(NSTextAlignment)textAlignment{
+    
+    htmlString = [htmlString stringByReplacingOccurrencesOfString:@"\n" withString:@"<br/>"];
+    
+    if (textColor) {
+        htmlString = [NSString stringWithFormat:@"<font color='%@' face='Helvetica'>%@</font>",[textColor hexString],htmlString];
+    }
+    
+    NSMutableAttributedString* htmlAttributedString = [[NSMutableAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUTF8StringEncoding]
+                                                       
+                                                                                              options:@{NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
+                                                                                           NSCharacterEncodingDocumentAttribute: [NSNumber numberWithInt:NSUTF8StringEncoding]}
+                                                                                   documentAttributes:nil
+                                                                                                error:nil];
+
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setAlignment:textAlignment];
+    [htmlAttributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, htmlAttributedString.length)];
+    if (textFont) {
+        [htmlAttributedString addAttribute:NSFontAttributeName value:textFont range:NSMakeRange(0, htmlAttributedString.length)];
+    }
+    
+    return htmlAttributedString;
+    
+}
+
+@end
+
 @implementation UIFont (Custom)
 
 #pragma clang diagnostic push
@@ -197,6 +235,33 @@
 @end
 
 @implementation UIColor (HexColorAddition)
+
+- (NSString*)hexString{
+    CGColorSpaceModel colorSpace = CGColorSpaceGetModel(CGColorGetColorSpace(self.CGColor));
+    const CGFloat *components = CGColorGetComponents(self.CGColor);
+    
+    CGFloat r, g, b, a;
+    
+    if (colorSpace == kCGColorSpaceModelMonochrome) {
+        r = components[0];
+        g = components[0];
+        b = components[0];
+        a = components[1];
+    }
+    else if (colorSpace == kCGColorSpaceModelRGB) {
+        r = components[0];
+        g = components[1];
+        b = components[2];
+        a = components[3];
+    }
+    
+    return [NSString stringWithFormat:@"#%02lX%02lX%02lX%02lX",
+            lroundf(r * 255),
+            lroundf(g * 255),
+            lroundf(b * 255),
+            lroundf(a * 255)];
+}
+
 + (UIColor *)hx_colorWithHexString:(NSString *)hexString{
     return [[self class] hx_colorWithHexString:hexString alpha:1.0];
 }

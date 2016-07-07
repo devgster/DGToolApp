@@ -24,6 +24,14 @@
 - (CGSize)sizeWithConstrainedToSize:(CGSize)size;
 @end
 
+@interface NSAttributedString (HTML)
+- (NSAttributedString *)attributedStringFromHTMLString:(NSString *)htmlString;
+- (NSAttributedString *)attributedStringFromHTMLString:(NSString *)htmlString
+                                             textColor:(UIColor*)textColor
+                                              textFont:(UIFont*)textFont
+                                         TextAlignment:(NSTextAlignment)textAlignment;
+@end
+
 @interface UIFont (Custom)
 + (UIFont *)appleSDGothicNeo_BoldSystemFontOfSize:(CGFloat)fontSize;
 + (UIFont *)appleSDGothicNeo_SemiBoldSystemFontOfSize:(CGFloat)fontSize;
@@ -40,6 +48,7 @@
 @end
 
 @interface UIColor (HexColorAddition)
+- (NSString*)hexString;
 + (UIColor *)hx_colorWithHexString:(NSString *)hexString;
 + (UIColor *)hx_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 @end
@@ -58,8 +67,8 @@
 + (NSString *)platformStringSimple;
 + (NSString *)country;
 + (NSString *)countryShort;
-+ (NSString*)language;
-+ (NSString*)languageShort;
++ (NSString *)language;
++ (NSString *)languageShort;
 + (void)setDebugCountry:(NSString*)country;
 + (void)setDebugLanguage:(NSString*)language;
 @end
@@ -69,6 +78,9 @@
 @end
 
 @interface ModalAppStore : NSObject
-+ (void)linkToAppstoreWithUrlString:(NSString*)urlString appId:(NSString*)appId;
-+ (void)linkToAppstoreWithViewController:(UIViewController*)viewController urlString:(NSString*)urlString appId:(NSString*)appId;
++ (void)linkToAppstoreWithUrlString:(NSString*)urlString
+                              appId:(NSString*)appId;
++ (void)linkToAppstoreWithViewController:(UIViewController*)viewController
+                               urlString:(NSString*)urlString
+                                   appId:(NSString*)appId;
 @end
