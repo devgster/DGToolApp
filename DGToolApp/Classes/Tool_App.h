@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Tool_Prefix.h"
-#import "Tool_GAnalytics.h"
+
 
 @interface Tool_App : NSObject
 + (UIViewController *)rootViewController;
