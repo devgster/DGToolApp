@@ -70,7 +70,7 @@
 
 @implementation NSString (Size)
 
-- (CGSize)sizewithfont:(UIFont*)font {
+- (CGSize)sizeWithfont:(UIFont*)font {
     CGSize size = [self sizeWithAttributes:@{NSFontAttributeName: font}];
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }

@@ -16,7 +16,7 @@
 @end
 
 @interface NSString (Size)
-- (CGSize)sizewithfont:(UIFont*)font;
+- (CGSize)sizeWithfont:(UIFont*)font;
 - (CGSize)sizeWithFont:(UIFont*)font constrainedToSize:(CGSize)size;
 @end
 
