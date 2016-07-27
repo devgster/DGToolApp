@@ -43,6 +43,10 @@
     return decriptedData;
 }
 
++ (BOOL)removeUserCacheWithName:(NSString*)name{
+    return [[NSFileManager defaultManager] removeItemAtPath:[self userCachePathWithFileName:name] error:nil];
+}
+
 #pragma mark - rootViewController;
 + (UIViewController *)rootViewController{
     return [self rootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
