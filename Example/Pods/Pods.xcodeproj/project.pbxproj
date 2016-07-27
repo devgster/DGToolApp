@@ -10,6 +10,8 @@
 		1051CC7E038C73266F665DE3C6A527D7 /* Tool_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE631B01618397E000B4BF1289EA6CA /* Tool_Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		295603EC23E7DB6F212A8D3F898F9A44 /* Pods-DGToolApp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0CB30D5AE410C778E5E84AE7A03718 /* Pods-DGToolApp_Example-dummy.m */; };
 		4C97C6BB0D920C9C1E0F63364083BA2B /* Tool_App.h in Headers */ = {isa = PBXBuildFile; fileRef = 1498D2D18BDC070FFC09F5CA6E9F4AB0 /* Tool_App.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60152D481D484B87005D8CFB /* NSData+AESAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 60152D461D484B87005D8CFB /* NSData+AESAdditions.h */; };
+		60152D491D484B87005D8CFB /* NSData+AESAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 60152D471D484B87005D8CFB /* NSData+AESAdditions.m */; };
 		63A8E019EC0C5CC0546B757BF77BB097 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 005B4525C2B704E88384E2D272DE401B /* UIDeviceHardware.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		762332D4795E59F34DED58C6CBB6320D /* Tool_App.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E76D5D76406A44C5ACECA7AAEA8F7 /* Tool_App.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		81DF22D30BB7B94FE6B07EBAF2AD25E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B666AC17A8F6A5831EC4C601D25405ED /* UIKit.framework */; };
@@ -63,6 +65,8 @@
 		54B95E578BBF9A5BF3CB9690621D8FA6 /* Pods-DGToolApp_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGToolApp_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		550CB56749BB68B37C7D9F72F27FC3AC /* GAIEcommerceFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = Headers/Public/GAIEcommerceFields.h; sourceTree = "<group>"; };
 		56DAB7A4BD1D8898B884F6932EA1C8AE /* UIDeviceIdentifier.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceIdentifier.xcconfig; sourceTree = "<group>"; };
+		60152D461D484B87005D8CFB /* NSData+AESAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESAdditions.h"; sourceTree = "<group>"; };
+		60152D471D484B87005D8CFB /* NSData+AESAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESAdditions.m"; sourceTree = "<group>"; };
 		65D8D88ACC61A24659D547151FF48CC9 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		6FE0A60C3495D2263C9672808A4562E3 /* DGToolApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGToolApp-prefix.pch"; sourceTree = "<group>"; };
 		73978647371A3E741F3FDE8BB19EB743 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = Headers/Public/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				4E8D4F6EF3447C89AB3B227617F3D84B /* ReplaceMe.m */,
 				1498D2D18BDC070FFC09F5CA6E9F4AB0 /* Tool_App.h */,
 				0D3E76D5D76406A44C5ACECA7AAEA8F7 /* Tool_App.m */,
+				60152D461D484B87005D8CFB /* NSData+AESAdditions.h */,
+				60152D471D484B87005D8CFB /* NSData+AESAdditions.m */,
 				8AE631B01618397E000B4BF1289EA6CA /* Tool_Prefix.h */,
 			);
 			path = Classes;
@@ -351,6 +357,7 @@
 			files = (
 				4C97C6BB0D920C9C1E0F63364083BA2B /* Tool_App.h in Headers */,
 				1051CC7E038C73266F665DE3C6A527D7 /* Tool_Prefix.h in Headers */,
+				60152D481D484B87005D8CFB /* NSData+AESAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +469,7 @@
 			files = (
 				C71A8A10507E8F636A1354987E26A813 /* DGToolApp-dummy.m in Sources */,
 				EB5B47DCE1BAA05E7E631133560C2280 /* ReplaceMe.m in Sources */,
+				60152D491D484B87005D8CFB /* NSData+AESAdditions.m in Sources */,
 				762332D4795E59F34DED58C6CBB6320D /* Tool_App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

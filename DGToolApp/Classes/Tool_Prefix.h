@@ -13,6 +13,12 @@
 
 #import "Tool_App.h"
 
+#ifdef DEBUG
+#define kIsDebug true
+#else
+#define kIsDebug false
+#endif
+
 #define kAppDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
 #define kScreenScale [UIScreen mainScreen].bounds.size.width/414.0

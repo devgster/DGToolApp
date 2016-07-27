@@ -11,8 +11,37 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <UIDeviceIdentifier/UIDeviceHardware.h>
 #import <StoreKit/StoreKit.h>
+#import "NSData+AESAdditions.h"
 
 @implementation Tool_App
+
++ (NSString*)userCachePathWithFileName:(NSString*)fileName{
+    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    return [[paths firstObject] stringByAppendingPathComponent:fileName];
+}
+
++ (BOOL)userCacheWithData:(NSData*)data name:(NSString*)name key:(NSString*)key{
+    NSError *error = nil;
+    
+    NSData *encryptedData = [data AES256EncryptWithKey:key];
+    
+    if (!error) {
+        [encryptedData writeToFile:[self userCachePathWithFileName:name] atomically:YES];
+    } else {
+        KKLogError(@"userCacheWithData Error :: %@", [error localizedDescription]);
+        return false;
+    }
+    
+    return true;
+}
+
++ (NSData*)userCacheWithName:(NSString*)name key:(NSString*)key{
+    NSData *data = [NSData dataWithContentsOfFile:[self userCachePathWithFileName:name]];
+    
+    NSData *decriptedData = [data AES256DecryptWithKey:key];
+    
+    return decriptedData;
+}
 
 #pragma mark - rootViewController;
 + (UIViewController *)rootViewController{
