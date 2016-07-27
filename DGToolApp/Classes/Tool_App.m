@@ -410,9 +410,9 @@
 
 @implementation UIDevice (DeviceInfo)
 
-static NSString *sDebugLenguage = nil;
+static NSString *sDebugLanguage = nil;
 static NSString *sDbugCountry = nil;
-static NSString *shotLenguage = nil;
+static NSString *shotLanguage = nil;
 
 + (NSString *) platformString{
     return [UIDeviceHardware platformString];
@@ -444,23 +444,23 @@ static NSString *shotLenguage = nil;
 }
 
 + (NSString*)language{
-    if (sDebugLenguage != nil) {
-        return sDebugLenguage;
+    if (sDebugLanguage != nil) {
+        return sDebugLanguage;
     }
     NSString *deviceLanguage = [[NSLocale preferredLanguages] objectAtIndex:0];
     return deviceLanguage;
 }
 
 + (NSString*)languageShort{
-    if (shotLenguage == nil) {
+    if (shotLanguage == nil) {
         NSString *deviceLanguage = [self language];
         NSArray *cutLanguage = [deviceLanguage componentsSeparatedByString:@"-"];
         if(cutLanguage.count > 1){
             deviceLanguage = cutLanguage[0];
         }
-        shotLenguage = deviceLanguage;
+        shotLanguage = [[NSString alloc] initWithString:deviceLanguage];
     }
-    return shotLenguage;
+    return shotLanguage;
 }
 
 + (void)setDebugCountry:(NSString*)country{
@@ -468,8 +468,8 @@ static NSString *shotLenguage = nil;
 }
 
 + (void)setDebugLanguage:(NSString*)language{
-    shotLenguage = nil;
-    sDebugLenguage = language;
+    shotLanguage = nil;
+    sDebugLanguage = language;
 }
 
 @end
@@ -481,7 +481,7 @@ static NSString *shotLenguage = nil;
 
     NSString *language = [[NSLocale preferredLanguages] firstObject];
     
-    if (sDebugLenguage != nil) {
+    if (sDebugLanguage != nil) {
         localizedString = [[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:[UIDevice language] ofType:@"lproj"]]
                            localizedStringForKey:key
                            value:@""
