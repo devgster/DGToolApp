@@ -57,11 +57,11 @@
     if ([rootViewController.presentedViewController isMemberOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = (UINavigationController *)rootViewController.presentedViewController;
         UIViewController *lastViewController = [[navigationController viewControllers] lastObject];
-        return [self topViewController:lastViewController];
+        return [self rootViewController:lastViewController];
     }
     
     UIViewController *presentedViewController = (UIViewController *)rootViewController.presentedViewController;
-    return [self topViewController:presentedViewController];
+    return [self rootViewController:presentedViewController];
 }
 
 #pragma mark - hideKeyboard
@@ -99,7 +99,7 @@
 
 @implementation NSString (Size)
 
-- (CGSize)sizeWithfont:(UIFont*)font {
+- (CGSize)sizeWithFont:(UIFont*)font {
     CGSize size = [self sizeWithAttributes:@{NSFontAttributeName: font}];
     return CGSizeMake(ceilf(size.width), ceilf(size.height));
 }

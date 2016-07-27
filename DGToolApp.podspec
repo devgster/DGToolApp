@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.4.0'
+  s.version          = '0.4.1'
   s.summary          = 'This is DGToolApp.'
 
 # This description is used to generate tags and improve search results.
@@ -49,6 +49,6 @@ Pod::Spec.new do |s|
 
 end
 
-#pod lib lint --use-libraries --no-clean --verbose
-#pod trunk push DGToolApp.podspec  --verbose --use-libraries
+#pod lib lint --use-libraries --no-clean --verbose --allow-warnings
+#pod trunk push DGToolApp.podspec  --verbose --use-libraries --allow-warnings
 
