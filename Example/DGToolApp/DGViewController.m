@@ -35,6 +35,16 @@
     KKLogDebug(@"NSLocalizedString = %@ ",NSLocalizedString(@"test",@""));
     
 
+    NSString *test = @"하하하하";
+    
+    [Tool_App cacheWithData:[test dataUsingEncoding:NSUTF8StringEncoding] name:@"test" key:@"test" ];
+    
+    [Tool_App loadCacheWithName:@"test" key:@"test" period:1 dateFlags:NSCalendarUnitMinute];
+    
+    
+    
+    
+    
     
 }
 

@@ -15,18 +15,18 @@
 
 @implementation Tool_App
 
-+ (NSString*)userCachePathWithFileName:(NSString*)fileName{
++ (NSString*)cachePathWithFileName:(NSString*)fileName{
     NSArray* paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
     return [[paths firstObject] stringByAppendingPathComponent:fileName];
 }
 
-+ (BOOL)userCacheWithData:(NSData*)data name:(NSString*)name key:(NSString*)key{
++ (BOOL)cacheWithData:(NSData*)data name:(NSString*)name key:(NSString*)key{
     NSError *error = nil;
     
     NSData *encryptedData = [data AES256EncryptWithKey:key];
     
     if (!error) {
-        [encryptedData writeToFile:[self userCachePathWithFileName:name] atomically:YES];
+        [encryptedData writeToFile:[self cachePathWithFileName:name] atomically:YES];
     } else {
         KKLogError(@"userCacheWithData Error :: %@", [error localizedDescription]);
         return false;
@@ -35,8 +35,51 @@
     return true;
 }
 
-+ (NSData*)userCacheWithName:(NSString*)name key:(NSString*)key{
-    NSData *data = [NSData dataWithContentsOfFile:[self userCachePathWithFileName:name]];
++ (NSData*)loadCacheWithName:(NSString*)name key:(NSString*)key period:(NSInteger)period dateFlags:(NSCalendarUnit)dateFlags{
+    NSData *data = [NSData dataWithContentsOfFile:[self cachePathWithFileName:name]];
+    
+    
+    if (data != nil) {
+        
+        NSError* error;
+        NSDate *creationDate = [[NSFileManager defaultManager] attributesOfItemAtPath:[self cachePathWithFileName:name] error:&error].fileModificationDate;
+        
+        NSDate *now = [NSDate date];
+        
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSDateComponents *comp = [cal components:dateFlags
+                                        fromDate:creationDate
+                                          toDate:now
+                                         options:0];
+        
+        NSInteger value = 0;
+        if (dateFlags == NSCalendarUnitMonth) {
+            value = comp.month;
+        }else if (dateFlags == NSCalendarUnitDay) {
+            value = comp.day;
+        }else if (dateFlags == NSCalendarUnitHour) {
+            value = comp.hour;
+        }else if (dateFlags == NSCalendarUnitMinute) {
+            value = comp.minute;
+        }else if (dateFlags == NSCalendarUnitSecond) {
+            value = comp.second;
+        }
+        
+        if (value > period) {
+            return nil;
+        }
+        
+        NSData *decriptedData = [data AES256DecryptWithKey:key];
+        
+        return decriptedData;
+    }
+
+    
+    return nil;
+}
+
++ (NSData*)loadCacheWithName:(NSString*)name key:(NSString*)key{
+    NSData *data = [NSData dataWithContentsOfFile:[self cachePathWithFileName:name]];
     
     NSData *decriptedData = [data AES256DecryptWithKey:key];
     
@@ -44,7 +87,7 @@
 }
 
 + (BOOL)removeUserCacheWithName:(NSString*)name{
-    return [[NSFileManager defaultManager] removeItemAtPath:[self userCachePathWithFileName:name] error:nil];
+    return [[NSFileManager defaultManager] removeItemAtPath:[self cachePathWithFileName:name] error:nil];
 }
 
 #pragma mark - rootViewController;

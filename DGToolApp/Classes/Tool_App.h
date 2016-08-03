@@ -12,9 +12,11 @@
 
 @interface Tool_App : NSObject
 
-+ (BOOL)userCacheWithData:(NSData*)data name:(NSString*)name key:(NSString*)key;
-+ (NSData*)userCacheWithName:(NSString*)name key:(NSString*)key;
++ (BOOL)cacheWithData:(NSData*)data name:(NSString*)name key:(NSString*)key;
++ (NSData*)loadCacheWithName:(NSString*)name key:(NSString*)key period:(NSInteger)period dateFlags:(NSCalendarUnit)dateFlags;
++ (NSData*)loadCacheWithName:(NSString*)name key:(NSString*)key;
 + (BOOL)removeUserCacheWithName:(NSString*)name;
+
 
 + (UIViewController *)rootViewController;
 + (void)hideKeyboard;
