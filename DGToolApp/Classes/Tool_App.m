@@ -131,13 +131,16 @@
 {
     if ([view conformsToProtocol:@protocol(UITextInputTraits)])
     {
-        [view resignFirstResponder];
+        if ([view canResignFirstResponder]) {
+            [view resignFirstResponder];
+        }
+        
     }
     if ([view.subviews count]>0)
     {
         for (int i = 0; i < [view.subviews count]; i++)
         {
-            [self _hideKeyboardRecursion:[view.subviews objectAtIndex:i]];
+            [self hideKeyboardRecursion:[view.subviews objectAtIndex:i]];
         }
     }
 }
