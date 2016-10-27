@@ -39,20 +39,20 @@
 #define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"   // Clear any foreground or background color
 
 #ifdef DEBUG
-#define KKLogError(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//에러 메시지
-#define KKLogWarn(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//경고 메시지
-#define KKLogInfo(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//협업자에게 전달 로그
-#define KKLogDebug(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"bg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//디버깅시 사용!!
+#define KKLogError(frmt, ...) NSLog((@"\n🚨***ERROR***🚨\n" frmt @"\n--------------------------------\n"), ##__VA_ARGS__)//에러 메시지
+#define KKLogWarn(frmt, ...) NSLog((@"\n⚠️***WARNING***⚠️\n" frmt @"\n--------------------------------\n"), ##__VA_ARGS__)//경고 메시지
+#define KKLogInfo(frmt, ...) NSLog((@"\n📢***INFOMATION***📢\n" frmt @"\n--------------------------------\n"), ##__VA_ARGS__)//협업자에게 전달 로그
+#define KKLogDebug(frmt, ...) NSLog((@"\n🐛***DEBUG***🐛\n" frmt @"\n--------------------------------\n"), ##__VA_ARGS__)//디버깅시 사용!!
 #else
-#define KKLogError(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//에러 메시지
-#define KKLogWarn(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)//경고 메시지
+#define KKLogError(frmt, ...)
+#define KKLogWarn(frmt, ...)
 #define KKLogInfo(frmt, ...)
 #define KKLogDebug(frmt, ...)
 #endif
 
 
 #ifdef DEBUG
-#define NSLog( s, ... ) NSLog( @"%d Line, %s in %@ ::: %@", __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define NSLog( s, ... ) NSLog( @"\nLine :: %d, %s in %@ ::: %@", __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 #else
 #define NSLog( s, ... )
 #endif
