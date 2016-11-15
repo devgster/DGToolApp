@@ -421,6 +421,16 @@
 
 @end
 
+@implementation UIScrollView (DGTool)
+
+- (int)currentPage{
+    CGFloat pageWidth = self.frame.size.width;
+    int page = floor((self.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    return page;
+}
+
+@end
+
 @implementation NSString (hx_StringTansformer)
 
 - (NSString *)hx_hexStringTransformFromThreeCharacters;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DGToolApp'
-  s.version          = '0.4.6
+  s.version          = '0.4.7
 '
   s.summary          = 'This is DGToolApp.'
 

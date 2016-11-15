@@ -60,6 +60,10 @@
 + (UIColor *)hx_colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 @end
 
+@interface UIScrollView (DGTool)
+- (int)currentPage;
+@end
+
 @interface NSString (hx_StringTansformer)
 - (NSString *)hx_hexStringTransformFromThreeCharacters;
 @end
