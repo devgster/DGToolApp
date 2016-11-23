@@ -470,6 +470,19 @@ static NSString *sDebugLanguage = nil;
 static NSString *sDbugCountry = nil;
 static NSString *shotLanguage = nil;
 
++ (NSString *)networkOperator{
+    
+    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [networkInfo subscriberCellularProvider];
+    int countryNetworkCode = [[carrier mobileCountryCode] intValue];
+    int mobileNetworkCode = [[carrier mobileNetworkCode] intValue];
+    
+    if (countryNetworkCode == 0 && mobileNetworkCode == 0) {
+        return @"NonUsim";
+    }
+    return [NSString stringWithFormat:@"%03d%02d",countryNetworkCode,mobileNetworkCode];
+}
+
 + (NSString *) platformString{
     return [UIDeviceHardware platformString];
 }

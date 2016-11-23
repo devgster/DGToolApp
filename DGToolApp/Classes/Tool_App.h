@@ -74,6 +74,7 @@
 @end
 
 @interface UIDevice (DeviceInfo)
++ (NSString *)networkOperator;
 + (NSString *)platformString;
 + (NSString *)platformStringSimple;
 + (NSString *)country;
